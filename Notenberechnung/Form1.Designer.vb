@@ -46,6 +46,7 @@ Partial Class Form1
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Übergangsstufe"
         Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.Visible = False
         '
         'Button3
         '
@@ -55,6 +56,7 @@ Partial Class Form1
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Oberstufe"
         Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.Visible = False
         '
         'Label1
         '

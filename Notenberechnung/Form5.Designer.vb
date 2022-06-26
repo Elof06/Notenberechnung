@@ -33,25 +33,28 @@ Partial Class Form5
         Me.btnReset = New System.Windows.Forms.Button()
         Me.btnOk = New System.Windows.Forms.Button()
         Me.btnOk2 = New System.Windows.Forms.Button()
-        Me.rbResult = New System.Windows.Forms.RadioButton()
         Me.txtMean = New System.Windows.Forms.TextBox()
         Me.txtMean2 = New System.Windows.Forms.TextBox()
+        Me.txtFinal = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnQuit
         '
-        Me.btnQuit.Location = New System.Drawing.Point(582, 85)
+        Me.btnQuit.Location = New System.Drawing.Point(512, 84)
         Me.btnQuit.Name = "btnQuit"
-        Me.btnQuit.Size = New System.Drawing.Size(100, 44)
+        Me.btnQuit.Size = New System.Drawing.Size(135, 44)
         Me.btnQuit.TabIndex = 15
         Me.btnQuit.Text = "Schließen"
         Me.btnQuit.UseVisualStyleBackColor = True
         '
         'btnShowAverage
         '
-        Me.btnShowAverage.Location = New System.Drawing.Point(118, 85)
+        Me.btnShowAverage.Location = New System.Drawing.Point(149, 85)
         Me.btnShowAverage.Name = "btnShowAverage"
-        Me.btnShowAverage.Size = New System.Drawing.Size(100, 44)
+        Me.btnShowAverage.Size = New System.Drawing.Size(131, 44)
         Me.btnShowAverage.TabIndex = 14
         Me.btnShowAverage.Text = "Los!"
         Me.btnShowAverage.UseVisualStyleBackColor = True
@@ -67,9 +70,9 @@ Partial Class Form5
         '
         'txtMark2
         '
-        Me.txtMark2.Location = New System.Drawing.Point(688, 56)
+        Me.txtMark2.Location = New System.Drawing.Point(653, 55)
         Me.txtMark2.Name = "txtMark2"
-        Me.txtMark2.Size = New System.Drawing.Size(100, 23)
+        Me.txtMark2.Size = New System.Drawing.Size(135, 23)
         Me.txtMark2.TabIndex = 12
         '
         'lstMark
@@ -85,18 +88,18 @@ Partial Class Form5
         '
         Me.txtMark.Location = New System.Drawing.Point(12, 56)
         Me.txtMark.Name = "txtMark"
-        Me.txtMark.Size = New System.Drawing.Size(100, 23)
+        Me.txtMark.Size = New System.Drawing.Size(131, 23)
         Me.txtMark.TabIndex = 10
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(692, 16)
+        Me.Label2.Location = New System.Drawing.Point(653, 15)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(96, 37)
+        Me.Label2.Size = New System.Drawing.Size(135, 37)
         Me.Label2.TabIndex = 9
-        Me.Label2.Text = "Label2"
+        Me.Label2.Text = "KA-Noten"
         '
         'Label1
         '
@@ -104,70 +107,100 @@ Partial Class Form5
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label1.Location = New System.Drawing.Point(12, 16)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(96, 37)
+        Me.Label1.Size = New System.Drawing.Size(131, 37)
         Me.Label1.TabIndex = 8
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "LK-Noten"
         '
         'btnReset
         '
-        Me.btnReset.Location = New System.Drawing.Point(343, 85)
+        Me.btnReset.Location = New System.Drawing.Point(328, 84)
         Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(100, 44)
+        Me.btnReset.Size = New System.Drawing.Size(135, 44)
         Me.btnReset.TabIndex = 16
         Me.btnReset.Text = "Reset"
         Me.btnReset.UseVisualStyleBackColor = True
+        Me.btnReset.Visible = False
         '
         'btnOk
         '
-        Me.btnOk.Location = New System.Drawing.Point(118, 56)
+        Me.btnOk.Location = New System.Drawing.Point(149, 56)
         Me.btnOk.Name = "btnOk"
-        Me.btnOk.Size = New System.Drawing.Size(100, 23)
+        Me.btnOk.Size = New System.Drawing.Size(131, 23)
         Me.btnOk.TabIndex = 17
         Me.btnOk.Text = "Ok"
         Me.btnOk.UseVisualStyleBackColor = True
         '
         'btnOk2
         '
-        Me.btnOk2.Location = New System.Drawing.Point(582, 56)
+        Me.btnOk2.Location = New System.Drawing.Point(512, 55)
         Me.btnOk2.Name = "btnOk2"
-        Me.btnOk2.Size = New System.Drawing.Size(100, 23)
+        Me.btnOk2.Size = New System.Drawing.Size(135, 23)
         Me.btnOk2.TabIndex = 18
         Me.btnOk2.Text = "Ok"
         Me.btnOk2.UseVisualStyleBackColor = True
         '
-        'rbResult
-        '
-        Me.rbResult.AutoSize = True
-        Me.rbResult.Location = New System.Drawing.Point(141, 253)
-        Me.rbResult.Name = "rbResult"
-        Me.rbResult.Size = New System.Drawing.Size(97, 19)
-        Me.rbResult.TabIndex = 19
-        Me.rbResult.TabStop = True
-        Me.rbResult.Text = "RadioButton1"
-        Me.rbResult.UseVisualStyleBackColor = True
-        '
         'txtMean
         '
-        Me.txtMean.Location = New System.Drawing.Point(118, 411)
+        Me.txtMean.Location = New System.Drawing.Point(149, 411)
         Me.txtMean.Name = "txtMean"
-        Me.txtMean.Size = New System.Drawing.Size(100, 23)
+        Me.txtMean.Size = New System.Drawing.Size(131, 23)
         Me.txtMean.TabIndex = 20
         '
         'txtMean2
         '
-        Me.txtMean2.Location = New System.Drawing.Point(582, 411)
+        Me.txtMean2.Location = New System.Drawing.Point(512, 411)
         Me.txtMean2.Name = "txtMean2"
-        Me.txtMean2.Size = New System.Drawing.Size(100, 23)
+        Me.txtMean2.Size = New System.Drawing.Size(135, 23)
         Me.txtMean2.TabIndex = 21
+        '
+        'txtFinal
+        '
+        Me.txtFinal.Location = New System.Drawing.Point(328, 411)
+        Me.txtFinal.Name = "txtFinal"
+        Me.txtFinal.Size = New System.Drawing.Size(131, 23)
+        Me.txtFinal.TabIndex = 22
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label3.Location = New System.Drawing.Point(149, 371)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(77, 37)
+        Me.Label3.TabIndex = 23
+        Me.Label3.Text = "Ø-LK"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.Location = New System.Drawing.Point(512, 371)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(81, 37)
+        Me.Label4.TabIndex = 24
+        Me.Label4.Text = "Ø-KA"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label5.Location = New System.Drawing.Point(328, 371)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(96, 37)
+        Me.Label5.TabIndex = 25
+        Me.Label5.Text = "Ø-Jahr"
         '
         'Form5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.txtFinal)
         Me.Controls.Add(Me.txtMean2)
         Me.Controls.Add(Me.txtMean)
-        Me.Controls.Add(Me.rbResult)
         Me.Controls.Add(Me.btnOk2)
         Me.Controls.Add(Me.btnOk)
         Me.Controls.Add(Me.btnReset)
@@ -197,7 +230,10 @@ Partial Class Form5
     Friend WithEvents btnReset As Button
     Friend WithEvents btnOk As Button
     Friend WithEvents btnOk2 As Button
-    Friend WithEvents rbResult As RadioButton
     Friend WithEvents txtMean As TextBox
     Friend WithEvents txtMean2 As TextBox
+    Friend WithEvents txtFinal As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
 End Class
